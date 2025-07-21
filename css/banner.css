@@ -1,0 +1,92 @@
+.banner {
+    /*se ajusta al tamaño establecido en maquetación*/
+    color: white;
+    font-family: Arial,
+        sans-serif;
+    text-align: center;
+    /*centrar contenido dentro del banner (texto)*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* centra horizontalmente */
+    align-items: center;
+    /* centra verticalmente */
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.7);
+}
+.banner video::-webkit-media-controls {
+    display: none !important;
+}
+/* Contenido opcional sobre el banner */
+
+
+.texto-banner {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 40vh;
+    text-shadow: 4px 2px 6px rgba(230, 175, 232, 0.8);
+}
+
+
+.texto-banner {
+    background: rgba(60, 21, 68, 0.5);
+    padding: 20px;
+
+}
+
+.texto-banner h1 {
+    font-size: 4rem;
+}
+
+.texto-banner p {
+    font-size: 2rem;
+}
+
+.texto-banner button {
+    padding: 10px 20px;
+    font-size: 2rem;
+    background-color: rgb(100, 21, 174);
+    /* azul tipo Bootstrap */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.texto-banner button:hover {
+    background-color: rgb(153, 67, 233);
+    /* azul más oscuro al pasar el mouse */
+}
+
+@media (max-width: 700px) {
+    .texto-banner h1 {
+        font-size: 6rem;
+    }
+
+    .texto-banner p {
+        font-size: 3rem;
+    }
+
+    .texto-banner button {
+        font-size: 3rem;
+    }
+}
