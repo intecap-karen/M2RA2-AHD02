@@ -1,8 +1,6 @@
 .banner {
-    /*se ajusta al tamaño establecido en maquetación*/
     color: white;
-    font-family: Arial,
-        sans-serif;
+    font-family: Arial, sans-serif;
     text-align: center;
     /*centrar contenido dentro del banner (texto)*/
     display: flex;
@@ -21,15 +19,15 @@
 }
 
 .banner video {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     z-index: -1;
-    filter: brightness(0.7);
+    filter: brightness(0.4);
 }
 .banner video::-webkit-media-controls {
     display: none !important;

@@ -4,6 +4,7 @@
         'nav'
         'header'
         'main';
+    z-index: 1;
 }
 
 body {
@@ -54,6 +55,7 @@ main {
     padding: 20px;
     font-family: Arial, sans-serif;
     text-align: center;
+    z-index: 1;
 }
 
 footer {

@@ -74,6 +74,11 @@
     height: 100vh;
     width: 100%;
     margin-top: 30px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
 }
 
 h1 {
@@ -82,34 +87,5 @@ h1 {
     text-align: center;
     text-shadow: 4px 2px 6px rgba(230, 175, 232, 0.8);
 
-}
-
-/* Contenedor del video */
-.video-fondo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    /* detrás de todo */
-    overflow: hidden;
-    filter: brightness(0.4);
-}
-
-/* El video ocupa toda la pantalla y se adapta */
-.video-fondo video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Contenido por encima del video */
-.container {
-    position: relative;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
 }
 
