@@ -24,7 +24,7 @@ header {
     left: 0;
     width: 100%;
     padding: 10px;
-    z-index: 1000;
+    z-index: 2;
 }
 
 .navegacion ul {
@@ -65,10 +65,12 @@ footer {
     height: 25vh;
     color: white;
     padding: 20px;
-    img{
-        width: 200px;
-        height: 200px;
+
+    img {
+        max-width: 200px;
+        max-height: 200px;
     }
+
     filter: brightness(0.7);
 }
 
@@ -79,6 +81,29 @@ footer p {
     line-height: 1.5;
     text-align: left;
 }
+
+
+.arriba-banner, .abajo-banner{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: rgb(230, 227, 241);
+    text-shadow: 4px 2px 6px rgba(230, 175, 232, 0.8);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.abajo-banner.visible,
+.arriba-banner.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+} 
+
 
 /*li {
     list-style: none;

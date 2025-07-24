@@ -13,3 +13,20 @@ const link3 = document.querySelector(".link3");
 link3.addEventListener("click", () => {
     window.location.href = "productos.html";
 });
+
+// ...existing code...
+
+const flechaAbajo = document.querySelector('.abajo-banner');
+const flechaArriba = document.querySelector('.arriba-banner');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        flechaArriba.classList.add('visible');
+        flechaAbajo.classList.remove('visible');
+    } else {
+        flechaArriba.classList.remove('visible');
+        flechaAbajo.classList.add('visible');
+    }
+});
+
+// ...existing code...

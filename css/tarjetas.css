@@ -1,6 +1,7 @@
 .tarjetas {
     display: grid;
     grid-template-columns: auto auto auto;
+    scroll-margin-top: 10vh; /* Ajusta el valor al alto de tu navegación */
 }
 
 .card {
@@ -10,12 +11,12 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 350px;
     transition: transform 0.3s ease;
-    margin-top: 30px;
+    margin-top: 20px;
     padding-bottom: 5px;
 }
 
 .card:hover {
-    transform: translateY(-15px);
+    transform: translateY(-15px);   
 }
 
 .card img {
